@@ -1,4 +1,4 @@
-# Apparent skin color
+# Apparent Skin Color
 
 **Beyond Skin Tone: A Multidimensional Measure of Apparent Skin Color**  
 William Thong, Przemyslaw Joniak, Alice Xiang  
@@ -8,11 +8,11 @@ ICCV 2023
 
 ## Skin color score extraction
 
-* Run [extract/predict.py] to extract skin color scores (i.e., perceptual lightness L* and hue angle h*)
+* Run [extract/predict.py](extract/predict.py) to extract skin color scores (i.e., perceptual lightness L* and hue angle h*)
   * Only PIL, scikit-image and scikit-learn are needed
   * Perceptual lightness L* is associated with skin tone (values below 60 are considered to be dark tones, while values above are light tones)
   * Hue angle h* is associated with skin huw (values below 55 are considered to red hues, while values above are yellow hues)
-* We also provide the results of this script in [extract/results] for the CelebAMask-HQ, FFHQ and CFD datasets
+* We also provide the results of this script in [extract/results](extract/results) for the CelebAMask-HQ, FFHQ and CFD datasets
 * When masks are not available, we extract them with [DeepLabV3](https://github.com/royorel/FFHQ-Aging-Dataset#optional-arguments) trained on CelebAMask-HQ
 
 ## Experiments
@@ -37,7 +37,7 @@ We evaluate the fairness of face verification models.
 Experiments are reported in Section 4.2.2 of the main paper.
 
 * Clone the following repository to have access to the models [[serengil/deepface](https://github.com/serengil/deepface)]
-* For the dataset, we rely on the LFW version prepared withing [scikit-learn](https://scikit-learn.org/)
+* For the dataset, we rely on the LFW version prepared by [scikit-learn](https://scikit-learn.org/)
 * Run [face-verification/lfw.py](face-verification/lfw.py) to get the predictions for the ArcFace, FaceNet and Dlib models
 
 ###  Skin color causal effect in attribute prediction
