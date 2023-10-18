@@ -11,7 +11,7 @@ ICCV 2023
 * Run [extract/predict.py](extract/predict.py) to extract skin color scores (i.e., perceptual lightness L* and hue angle h*)
   * Only PIL, scikit-image and scikit-learn are needed
   * Perceptual lightness L* is associated with skin tone (values below 60 are considered to be dark tones, while values above are light tones)
-  * Hue angle h* is associated with skin huw (values below 55 are considered to red hues, while values above are yellow hues)
+  * Hue angle h* is associated with skin hue (values below 55 are considered to red hues, while values above are yellow hues)
 * We also provide the results of this script in [extract/results](extract/results) for the CelebAMask-HQ, FFHQ and CFD datasets
 * When masks are not available, we extract them with [DeepLabV3](https://github.com/royorel/FFHQ-Aging-Dataset#optional-arguments) trained on CelebAMask-HQ
 
